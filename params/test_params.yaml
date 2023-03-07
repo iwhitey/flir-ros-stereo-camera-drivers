@@ -1,0 +1,47 @@
+common: 
+    master_cam: 21355715
+    init_delay: 1.0
+    color: true
+    ISP_enable: false  # if enabled colors between cameras do not match
+    soft_framerate: 10 # this frame rate reflects to the software frame rate set using ros::rate
+    exposure_time: 10997.0
+    gain: 11
+    lidar_trigger: false
+    trigger_topic: /trigger_test
+
+cam_ids:
+- 21355715
+- 21338052
+cam_aliases:
+- cam0
+- cam1
+#Camera info message details
+
+distortion_model: plumb_bob
+image_height: 1536
+image_width: 2048
+binning: 1
+distortion_coeffs:
+- [-0.021141875266089592, -0.3733872931278025, 2.385982550579459, 3.2824571732099725]
+- [-0.021141875266089592, -0.3733872931278025, 2.385982550579459, 3.2824571732099725]
+
+#specified as [fx  0 cx 0 fy cy 0  0  1]
+intrinsic_coeffs:
+- [1886.9232141485886, 0.0, 604.7214878709341, 0.0, 1886.6668765711668, 493.47726714719823, 0.0, 0.0, 1.0]
+- [1886.9232141485886, 0.0, 604.7214878709341, 0.0, 1886.6668765711668, 493.47726714719823, 0.0, 0.0, 1.0]
+
+rectification_coeffs:
+- [1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000]
+- [1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000]
+
+projection_coeffs:
+- [913.700317, 0.000000, 953.448302, 0.000000, 0.000000, 1063.296631, 777.871993, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000]
+- [913.700317, 0.000000, 953.448302, 0.000000, 0.000000, 1063.296631, 777.871993, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000]
+
+flip_horizontal:
+- false
+- false
+
+flip_vertical:
+- false
+- false
